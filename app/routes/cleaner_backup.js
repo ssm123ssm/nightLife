@@ -6,9 +6,8 @@ module.exports = function () {
     console.log('In cleaner fn...');
 
     var promise = new Promise(function (resolve, reject) {
-        var timeNow = Date.now();
+        var timeNow = new Date();
         console.log('Time now is: ' + timeNow);
-        console.log(new Date(timeNow));
         mongo.connect(databases.usersURL, function (err, db) {
             if (err) {
                 console.log(err.meassage);
@@ -33,22 +32,19 @@ module.exports = function () {
                             name: name
                         }).toArray(function (err, ress) {
                             console.log('Fixing user: ' + name);
-                            console.log('Server time now:' + timeNow);
-                            console.log(new Date(timeNow));
-                            console.log('Time ahead: ' + ress[0].serverTimeAhead);
+                            console.log('Server time now:' + Date.now());
                             console.log('  User time now: ' + Math.abs(Date.now() - ress[0].serverTimeAhead));
-                            console.log(new Date(Math.abs(Date.now() - ress[0].serverTimeAhead)));
+                            console.log('Time ahead: ' + ress[0].serverTimeAhead);
                             var userNow = Math.abs(Date.now() - ress[0].serverTimeAhead);
                             ress[0].restTimes.forEach(function (item) {
                                 console.log(Object.keys(item)[0]);
                                 console.log('On registration user time: ' + item[Object.keys(item)[0]]);
-                                console.log(new Date(+item[Object.keys(item)[0]]));
                                 var diff = Math.abs(userNow - (item[Object.keys(item)[0]])) / (1000 * 60 * 60);
-                                console.log('Difference: ' + diff + 'hours');
+                                console.log('Difference: ' + diff);
 
                                 var userNowDate = new Date(userNow).getDate();
                                 var regDate = new Date(item[Object.keys(item)[0]] - ress[0].serverTimeAhead).getDate();
-                                console.log('now: reg ' + userNowDate + ' :: ' + regDate);
+                                console.log('sdsdsds ' + userNowDate + ' :: ' + regDate);
                                 if (diff > 24) {
                                     console.log('Expired...');
                                     /////////////

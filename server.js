@@ -110,7 +110,7 @@ mongo.connect(databases.dbURL, function (err, db) {
     if (err) {
         console.log(err);
     }
-    var col = db.collection('votes');
+    //var col = db.collection('votes');
 
     //Getting views through routers
     app.get('/query', query_router(request));

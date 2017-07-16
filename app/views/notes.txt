@@ -1,0 +1,29 @@
+{
+"info":[{"id":1},
+{"name":"programming_languages"},
+{"num_options":2},
+{"votes":[{"item":"JS", "vt":5},{"item":"java", "vt":6}]}]
+}
+
+{
+"info":[{"id":2},
+{"name":"food"},
+{"num_options":2},
+{"votes":[{"item":"Apple", "vt":5},{"item":"Orange", "vt":16}]}]
+}
+
+{
+"info":[
+    
+{"id":3},
+{"name":"PCs"},
+{"num_options":3},
+{"votes":[{"item":"HP", "vt":15},{"item":"DELL", "vt":6},
+{"item":"Acer", "vt":8}]}]
+    
+}
+
+
+
+
+

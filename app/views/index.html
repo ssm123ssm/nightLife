@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="res/jquery.js"></script>
+    <script src="res/jquery.cookie.js"></script>
+    <script src="res/angular.js"></script>
+    <script src="res/angular-route.js"></script>
+    <script src="res/main.js"></script>
+    <script src="res/angular-runner.js"></script>
+    <link rel="stylesheet" href="res/bootstrap.css">
+    <link rel="stylesheet" href="res/main.css">
+    <link rel="stylesheet" href="res/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="res/tether.js"></script>
+
+
+
+    <script src="res/bootstrap.js"></script>
+
+
+</head>
+
+<body ng-app="myApp" ng-controller="testController">
+
+
+    <section class="intro">
+        <div class="inner">
+            <div class="row justify-content-center mt-5 hcon">
+                <h1 class="display-4 text-center">Nightlife Coordination App</h1>
+            </div>
+
+            <form class="mt-5">
+                <div class="form-group row justify-content-around">
+
+                    <input id="city" type="text" class="form-control col-10" placeholder="Search for city">
+
+                </div>
+
+                <div class="row justify-content-center"><button type="button" id="btn" class="btn btn-block col-8" ng-click="func()">Search</button></div>
+
+                <div class="loader text-center mt-3"></div>
+
+            </form>
+        </div>
+    </section>
+    <div class="results">
+        <ng-view></ng-view>
+
+    </div>
+    <div class="footer text-center mt-4">Created by Supun Sudaraka</div>
+
+
+
+
+</body>
+
+</html>

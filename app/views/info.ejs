@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    
+    <link rel="stylesheet" href="res/bootstrap.css">
+    <link rel="stylesheet" href="res/main.css">
+    <script src="res/tether.js"></script>
+        <script src="res/jquery.js"></script>
+
+    <script src="res/bootstrap.js"></script>
+    
+    
+    </head>
+<body>
+    
+  <div class="container">
+    
+      <div class="row justify-content-center mt-5">
+      <h1 class="display-4 text-center">Results</h1>
+      </div>
+      
+
+      
+    
+    </div>
+    
+    
+    
+    <div id="map">
+    
+    <%   for(var i = 0; i< info.businesses.length; i++){ %>
+                          <br> <%= info.businesses[i].name%>                     
+                                               
+                                              <% } %>
+    
+    </div>
+    
+    
+    
+    <script src="res/main.js"></script>
+    <div class="footer text-center mt-4">Created by Supun Sudaraka</div>
+    
+    </body>
+</html>

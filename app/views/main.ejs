@@ -1,0 +1,13 @@
+
+<div class="main">
+
+    <h3 class="text-center">Welcome to VoteNow!<br>Choose a vote here...</h3>
+    
+</div>
+
+<ul>
+    <%for(var i=0; i<res.length; i++){%>
+    <a href="votes/<%=res[i].info[0].id%>"> <li> <%=res[i].info[1].name %> </li></a>
+     <%  } %>
+
+</ul>

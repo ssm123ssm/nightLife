@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABVKAZuQGbBDNvzK9Q1Ljr5By0HlgRgAg&libraries=places"></script>
+
+    <script src="res/jquery.js"></script>
+    <link rel="stylesheet" href="res/bootstrap.css">
+    <script src="res/bootstrap.js"></script>
+    <script src="res/main.js"></script>
+    </head>
+<body>
+    
+  <div class="container">
+    
+      <div class="row justify-content-center mt-5">
+      <h1 class="display-4 text-center">Nightlife Coordination App</h1>
+      </div>
+      
+      <form class="mt-5">
+  <div class="form-group row justify-content-around">
+    
+    <input id='city' type="text" class="form-control col-10" id="formGroupExampleInput" placeholder="Search for city">
+      
+  </div>
+          
+        <div class="row justify-content-center"><button id='btn' class="btn btn-block col-8">Search</button></div>
+ 
+</form>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="footer text-center mt-4">Created by Supun Sudaraka</div>
+    </body>
+</html>
